@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+F:/Courses/Double Linked List/DoubleLinkedList.hpp
+iostream
+-
+
+F:/Courses/Double Linked List/Queue.hpp
+DoubleLinkedList.hpp
+F:/Courses/Double Linked List/DoubleLinkedList.hpp
+
+F:/Courses/Double Linked List/Stack.hpp
+DoubleLinkedList.hpp
+F:/Courses/Double Linked List/DoubleLinkedList.hpp
+
+F:/Courses/Double Linked List/main.cpp
+iostream
+-
+DoubleLinkedList.hpp
+F:/Courses/Double Linked List/DoubleLinkedList.hpp
+Stack.hpp
+F:/Courses/Double Linked List/Stack.hpp
+Queue.hpp
+F:/Courses/Double Linked List/Queue.hpp
+
