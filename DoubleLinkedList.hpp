@@ -23,7 +23,7 @@ public:
         head = tail = NULL;
     }
 
-    DoubleLinkedList(T element){
+    explicit DoubleLinkedList(T element){
         Node * node = new Node;
         node->info = element;
         node->prev = NULL;
@@ -130,6 +130,11 @@ public:
 
     T getTailValue(){
         return tail->info;
+    }
+
+    virtual ~DoubleLinkedList(){
+        for (Node* itr = head; itr != tail; itr = itr->next) delete &itr;
+        delete &tail;
     }
 
 };
